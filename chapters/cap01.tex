@@ -1,0 +1,163 @@
+\chapter{Introduction}\label{cap:intro}
+
+This chapter introduces the research context, motivations and objectives of this dissertation on sexism detection under the LeWiDi paradigm.
+With the recent growth of social networks, hate speech has become a concerning problem across online platforms. Sexism is one of its most frequent forms,
+appearing not only in written text (e.g.\ tweets, post captions) but also in images, memes, and most recently, short videos, where meaning often depends on 
+how different types of content relate between each other. Detecting this kind of content automatically is hard, since sexist content is not always explicit,
+and people with different backgrounds or experience can disagree on what should be considered sexist. This dissertation addresses this problem by proposing a multimodal system
+that learns from these disagreements instead of discarding them.
+
+Section 1.1 establishes the social and technological context that motivates this research, examining how current approaches to sexism detection fall short in dealing with multimodal content and subjective annotation. 
+Section 1.2 presents the main problem addressed by this work, framing the specific limitations that the proposed system aims to overcome. 
+Section 1.3 presents the main objective and specific contributions of this work, detailing the multimodal architecture developed and its application to sexism detection in memes and videos. Finally, Section 1.4 outlines the organization of this dissertation, providing a roadmap for the chapters that follow.
+
+\section{Contextualization}\label{sec:contextualization}
+The expansion of social media apps has changed how people communicate, share opinions, and interact with one another. This has been followed by increasing interest in applying artificial intelligence and natural language processing
+techniques to understand a monitor online content, specifically in domains where harmful behavior can spread quickly, such as the automated identification of hate speech and discrimination content.
+
+In this scenario, the ability to correctly detect sexist content is essential for supporting content moderation and maintain safer online environments. However, contemporary social media content presents increasingly complex challenges:
+sexism is frequently expressed not through just text, but the interaction between text and images, as in memes, or across multiple media types such as short-form videos.
+Furthermore, what counts as sexist is not always agreed upon, since it depends on cultural, personal, and contextual factors that vary between individuals.
+
+Traditional approaches to sexism and hate speech detection, typically based on unimodal text analysis and majority vote labeling, have proven to not well address this complexity. As highlighted by\cite{waseem2016hateful}, early hate speech detection relied on surface-level textual features
+that fail to capture the more subtle and context-dependent ways discriminatory context is expressed. Furthermore,\cite{kiela2020hateful} demonstrate that meme classification requires genuine cross-modal reasoning, since image and text can carry contradictory or complementary meaning that neither modality conveys alone
+Additionally, collapsing annotator judgements into a single majority-vote discards the information carried by disagreement itself, which\cite{uma2021learning} and
+~\cite{plank2022problem} show to be a meaningful signal rather than noise, particularly on subjective tasks such as sexism detection.
+
+Multimodal learning combined with the Learning With Disagreement (LeWiDi) paradigm offers a promising solution to these challenges by enabling a system to jointly reason over different types of content while preserving the distribution of annotator opinions
+instead of collapsing to a single ground truth. Under this paradigm, a model trained on soft label distributions can express calibrated uncertainty on contested instance, rather than committing to an overconfident and potentially incorrect decision.
+
+This combined strategy is particularly valuable for sexism detection in memes and short-form videos, where visual, textual, and, in some cases behavioral or physiological signals must be considered together, and where the demographic background of annotators can meaningfully influence how content is perceived and labeled. If left unaddressed, this subjectivity,
+together with the difficulty of fusing heterogeneous modalities, can result in systems that are either overconfident on ambiguous content or unable to generalize across different types of media.
+
+By implementing a multimodal, demographic-aware system trained under the LeWiDi paradigm, it is possible to achieve more robust and better-calibrated sexism detection while remaining lightweight enough to train without large-scale computational resources. As
+explored throughout this dissertation, combining textual, visual, and, for video content, biometric evidence within a single soft-label objective allows local, modality-specific signals to be aggregated into a more reliable characterization of sexist content than approaches
+relying on isolated modalities or collapsed labels.
+
+\section{Problem Statement}\label{sec:problem-statement}
+
+Despite recent progress in multimodal learning and subjective label modeling, three
+problems remain insufficiently addressed when it comes to detecting sexism in memes and
+short-form videos.
+
+First, most existing multimodal hate speech detection systems are designed for a single
+type of content, typically static images or short text, and do not generalize easily to
+short-form video, where meaning is distributed across visual, textual, and auditory signals
+that unfold over time~\cite{tong2022videomae}. Recent efforts have further extended this
+challenge by introducing physiological data collected while participants view sexist content,
+opening a largely unexplored connection between perceptual signals and computational
+subjectivity models~\cite{exist2026overview}. Extending multimodal fusion beyond memes
+to video and physiological signals, without relying on large-scale pretrained vision-language
+models or extensive computational resources, remains an open engineering problem.
+
+Second, sexism detection is an inherently subjective task, and annotators frequently
+disagree on whether content is sexist, and, if so, in what way~\cite{uma2021learning,
+plank2022problem}. Systems trained on majority-vote labels discard this disagreement,
+producing overconfident predictions on genuinely ambiguous content. While training
+directly on soft label distributions preserves this information, it is not yet clear how to
+combine this approach with heterogeneous modalities and annotator demographic information within a single, jointly trained architecture.
+
+Third, not all disagreement between annotators reflects genuine ambiguity in the content;
+some of it results from annotator inconsistency, spamming, or error~\cite{hovy2013mace,
+dawid1979maximum}. Distinguishing between these two sources of disagreement requires
+estimating the reliability of individual annotators while preserving systematic disagreement as signal, as proposed by more recent Bayesian approaches~\cite{ivey2025nutmeg}.
+However, models that learn annotator identity directly cannot generalize to annotators
+unseen during training~\cite{davani2022dealing}, which limits their applicability once new
+annotators contribute to a dataset.
+
+This dissertation is motivated by the need to address these three problems jointly, within
+a single system capable of detecting sexism across memes and short-form video while
+preserving the subjectivity inherent to the task and distinguishing genuine disagreement
+from annotation noise.
+
+\section{Objectives}\label{sec:objectives}
+The main objective of this work is to develop and validate a multimodal architecture for
+sexism detection in memes and short-form videos, trained under the Learning with Dis-
+agreement paradigm and capable of distinguishing genuine annotator disagreement from
+annotation noise. To achieve this main objective, the following specific objectives were
+established:
+
+\begin{itemize}
+    \item \textbf{Design a multimodal architecture for meme classification} that jointly encodes
+    textual and visual content, and injects annotator demographic information to capture
+    how content is perceived across different population groups;
+
+    \item \textbf{Extend this architecture} to short-form video by integrating visual, textual, auditory, and physiological signals within a shared fusion strategy, allowing the system to
+    exploit modality-specific evidence while remaining robust to missing modalities;
+
+    \item \textbf{Train both systems directly on soft label distributions} rather than majority-vote
+    labels, so that model predictions reflect the level of agreement or disagreement present
+    in the original annotations across all three prediction subtasks (binary detection, source
+    intention, and fine-grained category);
+
+    \item \textbf{Develop an annotator reliability layer} that estimates the consistency of individual
+    annotators during training and generalizes this estimate to annotators unseen at inference time, through demographic-conditioned mapping rather than fixed annotator
+    identities;
+
+    \item \textbf{Validate the proposed system} through experiments on meme and video datasets
+    annotated under this scheme, evaluating its performance against unimodal baselines
+    and majority-vote-trained systems, and assessing the individual contribution of each
+    architectural component through ablation studies.
+\end{itemize}
+
+This approach focus on improving the robustness and calibration of sexism detection systems
+by combining modalities and preserving the subjectivity of the annotation
+process, instead of collapsing it into a single decision. The proposed system addresses
+key limitations of traditional single-modality and majority-vote-based approaches, including their inability to capture cross-modal meaning, their tendency to produce
+overconfident predictions on ambiguous content, and their limited capacity to generalize annotator
+reliability estimates beyond the specific individuals seen during training.
+\section{Document Structure}\label{sec:document-structure}
+This dissertation is organized into eight chapters and one appendix that progressively
+develop the proposed multimodal system from theoretical foundations to practical
+implementation and validation.
+
+\textbf{Chapter 1: Introduction} establishes the research context, motivations, and
+objectives. It examines the limitations of current sexism detection approaches when
+faced with multimodal content and subjective annotation, and introduces the Learning
+with Disagreement paradigm as a promising foundation for the proposed system.
+
+\textbf{Chapter 2: State of the Art} provides a comprehensive review of relevant
+literature organized into four main areas: sexism and hate speech detection and its
+evolution towards multimodal approaches; multimodal learning techniques applied to
+memes and short-form video; the Learning with Disagreement paradigm and soft-label
+training; and annotator modeling and reliability estimation, identifying gaps that this
+dissertation addresses.
+
+\textbf{Chapter 3: Task and Dataset Description} describes the problem formulation
+across its three prediction subtasks, the meme and video datasets used in this work, the
+annotator demographic metadata, the physiological data sub-corpus, and the evaluation
+metrics adopted throughout the dissertation.
+
+\textbf{Chapter 4: Meme System Architecture} presents the first core contribution of
+this work: a detailed specification of the multimodal architecture developed for sexism
+detection in memes. This chapter describes the text and visual encoders, the fusion
+strategy adopted after empirically discarding cross-modal attention, the annotator
+demographic injection mechanism, and the training objectives used to jointly optimize
+the three prediction subtasks.
+
+\textbf{Chapter 5: Video System Architecture} extends this architecture to short-form
+video, detailing the video, audio, and text encoders, the integration of eye-tracking
+and heart-rate physiological signals, the multimodal fusion strategy with modality
+dropout, and the corresponding training configuration.
+
+\textbf{Chapter 6: Annotator Reliability Modeling} presents the second core
+contribution of this work: an annotator reliability layer that distinguishes genuine
+disagreement from annotation noise. This chapter motivates the problem, describes the
+reliability estimation process used during training, and details the demographic-
+conditioned mapping developed to generalize this estimate to annotators unseen at
+inference time.
+
+\textbf{Chapter 7: Experimental Setup and Results} documents the implementation
+of both proposed architectures, the experimental methodology used for validation,
+the ablation study conducted to isolate the contribution of individual architectural
+components, the results of the annotator reliability study, and a comprehensive analysis
+of the system's performance across both media types.
+
+\textbf{Chapter 8: Conclusions} synthesizes the main contributions of this research,
+discusses the limitations of the current work, and proposes directions for future
+research to extend the proposed multimodal, disagreement-aware detection system.
+
+Throughout these chapters, the dissertation progressively builds from the theoretical
+foundations and state-of-the-art review toward the practical implementation and
+validation of a novel multimodal system that addresses the challenges of sexism
+detection across memes and short-form video.

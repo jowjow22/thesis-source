@@ -1,0 +1,141 @@
+\documentclass[12pt,a4paper,twoside]{ipb}
+
+% comentar caso seja uma disseração de mestrado
+%\usepackage{projei}
+
+\usepackage[english]{babel}
+\graphicspath{{./images/}}
+\usepackage{listings} % incluir listagens
+\usepackage{url} % typeset URL's
+\usepackage[colorlinks=true,
+                    urlcolor=black, %blue
+                    linkcolor=black,
+                    citecolor=black, %cor das citações
+                    bookmarks=true,
+                    pdfstartview=FitH]{hyperref}
+
+% Pode ser usado biblatex
+\usepackage[style=ieee,backend=biber]{biblatex}
+\addbibresource{lib/refs.bib}
+\usepackage{todonotes}
+
+\usepackage{lipsum}
+
+\usepackage{tabulary}
+
+\usepackage{algorithm}
+\usepackage{boxedminipage}
+
+\usepackage{algpseudocode}
+\usepackage{caption}
+
+\usepackage{booktabs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Lightweight transformer architecture for sexism classification}
+
+% if double diploma, uncomment
+% also provide the partner institution logo in etc/logo_dd.png
+\ddtrue
+\author{Jonathan Santos da Silva - a67606}
+%\authnum{1}
+\secondauthor{Student name - Student number}
+%\secauthnum{2}
+
+\supervisor{Prof. Rui Pedro Lopes}
+\cosupervisor{Prof. Gleifer Vaz Alves}
+\secondcosupervisor{Prof. Ahmed Gamal Ali Ali Ibrahi}
+
+% Para definir o ano letivo
+\courseyear{2025-2026}
+
+
+%\cosupervisor{Nome do co-orientador}
+%\firstreader{Nome do arguente}
+% Para definir o ano letivo
+%\courseyear{1234}
+% Para nao mostrar a lista de tabelas
+\tablespagefalse
+
+\makeglossaries
+\loadglsentries{acronym}
+
+\begin{document}
+
+	% Coloca a capa, primeira pagina e outros
+	
+	\beforepreface
+	
+	%\cleardoublepage
+	
+	\prefacesection*{Dedication}
+	\input{chapters/dedication}
+	
+	%\cleardoublepage
+	
+	\prefacesection*{Acknowledgment}
+	\input{chapters/acknowledgment}
+	
+	%\cleardoublepage
+	
+	\prefacesection*{Abstract}
+	\input{chapters/abstract}
+
+	\prefacesection*{Resumo}
+	\input{chapters/resumo}
+
+	%\cleardoublepage
+
+	
+	% Coloca indices
+	\afterpreface
+	%\cleardoublepage
+	\printglossary[type=\acronymtype,nonumberlist,title={Acronyms}]
+	\glsaddall
+	
+	%\listoftodos
+	
+	\bodystart
+	
+	
+	% Capitulos do documento
+	\cleardoublepage
+	\input{chapters/cap01}
+	\cleardoublepage
+	\input{chapters/cap02}
+	\cleardoublepage
+	\input{chapters/cap03}
+	\cleardoublepage
+	\input{chapters/cap04}
+	\cleardoublepage
+	\input{chapters/cap05}
+	\cleardoublepage
+	\input{chapters/cap06}
+	\cleardoublepage
+	\input{chapters/cap07}
+	\cleardoublepage
+	\input{chapters/cap08}
+
+	%% estilo de referências. outros valores posíveis são 'plain' e 'abbrv' apalike
+	%\bibliographystyle{plain}
+	%% listagem de referências
+	%\bibliography{lib/refs}
+	
+	%  Caso seja usado biblatex
+	\printbibliography
+	
+	
+	% Apêndices
+	\appendix
+	
+	%http://tex.stackexchange.com/questions/59572/custom-page-numbering-for-appendix
+	\pretocmd{\chapter}{%
+		\clearpage
+		\pagenumbering{arabic}%
+		\renewcommand*{\thepage}{\thechapter\arabic{page}}%
+	}{}{}
+	
+	\input{chapters/apendice01}
+
+\end{document}

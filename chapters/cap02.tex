@@ -1,0 +1,119 @@
+\chapter{State of the Art}\label{cap:conceptual}
+
+This chapter presents the state of the art relevant to the development of a multimodal
+system for sexism detection under the Learning with Disagreement paradigm. The analysis
+is organized into five complementary sections: Section 2.1 examines the evolution of
+sexism and hate speech detection, from early text-only methods to current multimodal
+approaches; Section 2.2 analyzes multimodal learning architectures applied to memes
+and short-form video, together with their limitations; Section 2.3 introduces the Learning
+with Disagreement paradigm and soft-label training as an alternative to majority-vote
+labeling; Section 2.4 reviews annotator modeling and reliability estimation techniques,
+from early competence-estimation models to recent demographic-aware approaches; and
+Section 2.5 synthesizes these four perspectives, identifying the gaps that this dissertation
+aims to address.
+
+\section{Sexism and Hate Speech Detection}\label{sec:sexism-hate-speech-detection}
+
+Sexism and hate speech detection has evolved over the past
+decade, following the broader progression of natural language processing and computer
+vision techniques. Understanding this evolution is essential for situating system proposed in this dissertation.
+
+Early approaches to sexism and hate speech detection relied entirely on textual content.
+\cite{waseem2016hateful} framed hate speech detection as a supervised classification
+problem over surface-level linguistic features, such as character n-grams and word
+embeddings, applied to short social media posts. These text-only methods proved effective
+for explicit forms of hate speech, characterized by unambiguous slurs or overtly aggressive
+language, but struggled to capture more implicit or context-dependent expressions, where
+meaning depends on cultural references, sarcasm, or visual elements absent from the text
+itself.
+
+The introduction of multimodal benchmarks revealed the limitations of unimodal
+approaches for social media content in which discriminatory meaning arises specifically
+from the interaction between text and image.~\cite{kiela2020hateful} demonstrated, through
+the Hateful Memes Challenge, that meme classification systems relying solely on text or
+solely on image features consistently underperform relative to systems that jointly reason
+over both modalities, since a meme's message frequently depends on the juxtaposition of
+an image with an unrelated or contradictory caption. This finding established multimodal
+reasoning as a necessary, rather than optional, component of hateful and sexist content
+detection in visual social media formats.
+
+More recently, the object of detection has extended beyond static images to short-form
+video, a format that introduces additional temporal and auditory dimensions.~\cite{arcos2024tiktok}
+proposed one of the first multimodal frameworks specifically targeting sexism detection
+in TikTok videos, combining textual transcripts, audio features, and visual frames, and
+showed that this combination substantially outperforms text-only baselines on video
+content, where tone of voice, background music, and visual context frequently carry
+sexist meaning that is entirely absent from the spoken or written text. Complementing this
+direction,~\cite{degrazia2025mused} introduced a Spanish-language video dataset annotated
+with modality-specific labels, explicitly measuring the contribution of each modality to
+human sexism judgments. Their results show that visual cues play a decisive role in the
+recognition of implicit or indirect sexism, cases in which annotators relying on the text
+transcript alone frequently disagree with annotators who have access to the full video, underscoring
+both the necessity of multimodal analysis and the inherently subjective nature
+of the task.
+
+Taken together, this body of work traces a clear trajectory from unimodal, explicit hate
+speech detection towards multimodal, context-dependent sexism characterization across
+increasingly rich media formats. This trajectory motivates a closer examination of the
+multimodal learning architectures that make such joint reasoning possible, which is the
+focus of the next section.
+
+\section{Multimodal Learning for Memes and Video}\label{sec:multimodal-learning-memes-video}
+
+Building on the need for cross-modal reasoning established in the previous section, this
+section examines the architectures developed to jointly process textual, visual, and, for
+video content, auditory information, along with the specific limitations that motivate the
+architectural choices adopted in this dissertation.
+
+Contrastive vision-language pre-training has become a foundational technique for
+representing images and text within a shared embedding space.~\cite{radford2021learning}
+introduced CLIP, a model trained on large-scale image-text pairs using a contrastive
+objective, producing visual and textual encoders whose representations are directly comparable through cosine similarity. While CLIP was designed as a general-purpose vision-
+language model rather than one tailored to hateful or sexist content, its representations
+have become a common starting point for multimodal meme classification, given the
+strong alignment they provide between image and text semantics without requiring paired
+supervision specific to the target task.
+
+Building on this foundation,~\cite{kumar2022hateclipper} proposed Hate-CLIPper, which
+explicitly models cross-modal interactions between CLIP-derived image and text features
+through a feature interaction matrix, rather than treating them as independent inputs to be
+concatenated. This architecture specializes the general-purpose alignment learned by CLIP
+into a task-specific representation for hateful meme detection, and established a strong
+baseline for subsequent multimodal meme classification systems. More recent submissions
+to sexism detection shared tasks have explored an alternative direction, leveraging large
+pretrained multimodal models directly through fine-tuning or prompting rather than designing specialized fusion mechanisms~\cite{aiwizards2026}. Both directions, however, share
+a common limitation for the sexism detection setting: neither explicitly models the annotation disagreement that characterizes sexism as a subjective task, treating each meme as
+having a single correct label to be predicted.
+
+Extending multimodal reasoning to short-form video introduces additional architectural
+challenges, since video content combines temporal, visual, textual, and auditory signals that must be aligned and fused.~\cite{tong2022videomae} proposed VideoMAE,
+a self-supervised video encoder trained via masked autoencoding, which learns effective
+spatio-temporal representations from a comparatively small number of labeled videos, making it particularly suitable for tasks such as sexism detection where large annotated video
+corpora are not available. For the auditory component,~\cite{radford2023whisper} introduced Whisper, a speech recognition and audio representation model trained on large-scale
+weakly supervised data, robust to the noisy, non-studio audio conditions typical of user-
+generated video content. Combining video, audio, and text encoders into a single system
+requires a fusion strategy capable of handling the resulting high-dimensional, heterogeneous representation space, as well as robustness to cases where one modality is degraded
+or entirely missing, a common occurrence in real-world video content where audio may
+be silent, absent, or uninformative.
+
+A recurring design decision across this literature concerns how modality-specific representations should be combined. Approaches based on cross-modal attention allow each
+modality to dynamically weigh evidence from the others, offering, in principle, a more
+expressive fusion mechanism. In practice, however, such mechanisms require substantial
+training data to learn meaningful attention patterns, and can collapse to near-uniform
+weighting when trained on comparatively small, specialized datasets such as those used for
+sexism detection. Simpler fusion strategies, such as concatenating pooled representations
+from each modality before a shared classification head, have been shown in several settings
+to match or exceed the performance of more elaborate attention-based mechanisms under
+these data constraints, while being considerably lighter to train and less prone to overfitting.
+
+This trade-off between architectural expressiveness and data efficiency directly informs
+the fusion strategies adopted for both the meme and video systems developed in this
+dissertation, detailed in Chapters 4 and 5, respectively. The next section turns to a distinct
+but complementary challenge: how these multimodal systems should be trained when the
+labels themselves reflect genuine disagreement among annotators.
+
+\section{Learning with Disagreement and Soft-Label Training}\label{sec:learning-disagreement-soft-label}
+
+\section{Annotator Modeling and Reliability Estimation}\label{sec:annotator-modeling-reliability-estimation}
+
+\section{Towards Demographic-Aware, Disagreement-Preserving Systems}\label{sec:demographic-aware-disagreement-preserving}

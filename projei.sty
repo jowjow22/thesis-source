@@ -1,0 +1,150 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{projei}[2015/11/25 Estilo para relatorio de projeto de EI]
+
+
+%%%%%
+%%%%%   SETUP COMMANDS
+%%%%%
+
+\renewcommand\@course{Engenharia Inform\'{a}tica}
+
+\def\firstreader#1{\gdef\@firstreader{#1}}
+\def\secondreader#1{\gdef\@secondreader{#1}}
+\def\thirdreader#1{\gdef\@thirdreader{#1}}
+
+\newif\ifdisclaimerpage
+\disclaimerpagetrue 
+\newif\ifsignaturepage
+\signaturepagetrue 
+
+
+\def\coverpage{%
+\thispagestyle{empty}%
+
+%\hspace{-4cm}
+\begin{center}
+    \includegraphics[width=0.6\columnwidth, keepaspectratio]{etc/logo_ipb}\\
+\end{center}
+
+
+%\null\vskip1in%
+\begin{center}
+	\vspace{2em}
+    {\Huge\expandafter{\bf \@title}}
+    \vfill
+    {\Large\textbf{
+    \@author \quad \ifdefined\@authnum \@authnum \fi \\
+        \ifdefined\@secondauthor \@secondauthor\quad \ifdefined\@secauthnum \@secauthnum \fi\fi
+        }}
+    \vfill
+    %Trabalho realizado sob a orienta\c{c}\~{a}o de\\
+    Relat\'{o}rio Final do Trabalho de Projecto de \@course\ apresentado \`{a} Escola Superior de Tecnologia e de Gest\~{a}o do Instituto Polit\'{e}cnico de Bragan\c{c}a.\\
+    \vspace{4em}
+    Trabalho orientado por:\\
+	\@supervisor\\
+	\ifdefined\@cosupervisor \@cosupervisor \@secondcosupervisor\\ \fi
+    \vfill
+    Bragança\\
+    \@courseyear
+\end{center}
+\cleardoublepage
+}
+
+\def\titlep{%
+\thispagestyle{empty}%
+
+%\hspace{-4cm}
+\begin{center}
+    \includegraphics[width=0.6\columnwidth, keepaspectratio]{etc/logo_ipb}\\
+\end{center}
+
+
+%\null\vskip1in%
+\begin{center}
+	\vspace{2em}
+    {\Huge\expandafter{\bf \@title}}
+    \vfill
+    {\Large\textbf{
+    \@author \quad \ifdefined\@authnum \@authnum \fi \\
+        \ifdefined\@secondauthor \@secondauthor\quad \ifdefined\@secauthnum \@secauthnum \fi\fi}}
+    \vfill
+    %Trabalho realizado sob a orienta\c{c}\~{a}o de\\
+    Relat\'{o}rio Final do Trabalho de Projecto de \@course\ apresentado \`{a} Escola Superior de Tecnologia e de Gest\~{a}o do Instituto Polit\'{e}cnico de Bragan\c{c}a.\\
+    \vspace{4em}
+    Trabalho orientado por:\\
+	\@supervisor\\
+	\ifdefined\@cosupervisor \@cosupervisor\\ \fi
+    \vfill
+    Bragança\\
+    \@courseyear
+\end{center}
+\cleardoublepage
+}
+
+
+\def\disclaimerpage{%
+        \null\vfill
+        \begin{flushleft}
+                A Escola Superior de Tecnologia e de Gest\~ao n\~ao se responsabiliza pelas opini\~oes expressas neste relat\'orio.
+	     %Escola Superior de Tecnologia e de Gest\~ao is not responsible for the opinions expressed in this document.
+        \end{flushleft}
+        \vfill
+
+\cleardoublepage
+}
+
+
+\long\def\signature#1{%
+\begin{flushright}
+\begin{minipage}{5in}
+\parindent=0pt
+Certifico que li este relat\'orio e que, na minha opini\~ao, \'e adequado no seu conte\'udo e forma como demonstrador do trabalho desenvolvido no \^ambito da UC de Projecto.
+%I certify that i have read this dissertation and that, in my opinion, is appropriate in content and form as a demonstrator of the developed work.
+\par
+\vspace{.5in}
+%\hbox to 4in{\hfil\shortstack{\vrule width 3in height 0.4pt\\ #1}}
+\hbox to 5in{\hfil\begin{tabular}{@{}l@{}}\vrule width 3in height
+    0.4pt depth 0pt\\ #1\end{tabular}}
+\end{minipage}
+\end{flushright}
+}
+
+\def\signaturepage{%
+        \signature{\@supervisor\quad (Orientador)}
+        \vfill
+% if second principal advisor
+        \ifdefined\@cosupervisor
+        \signature{\@cosupervisor\quad (Co-orientador)}
+        \vfill\fi
+        \ifdefined\@firstreader
+        \signature{\@firstreader\quad Arguente}
+        \vfill\fi
+        \ifdefined\@secondreader
+        \signature\@secondreader
+        \vfill\fi
+% if thirdreader then do \signature\@thirdreader \vfill
+        \ifdefined\@thirdreader
+        \signature\@thirdreader
+        \vfill\fi
+        \begin{flushright}
+        \begin{minipage}{5in}
+        Aceite para avaliação da UC de Projecto.\par
+        %Accepted for assessment of the dissertation in Information Systems.
+        \vspace{.5in}
+%        \hbox to 4in{\hfil\shortstack{\vrule width 3in height 0.4pt}}
+        \end{minipage}
+        \end{flushright}
+        }
+
+
+\def\beforepreface{%
+        \pagenumbering{roman}
+        \pagestyle{plain}
+        \coverpage
+        \titlep
+        \ifdisclaimerpage\disclaimerpage\fi
+        \ifsignaturepage\signaturepage\fi
+        \cleardoublepage
+}
+
+\endinput

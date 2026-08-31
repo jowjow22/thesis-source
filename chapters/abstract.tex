@@ -1,0 +1,12 @@
+%\thispagestyle{empty}
+
+Automatic sexism detection in multimodal online content is limited by methods that rely on a single modality or collapse annotator disagreement into a single majority label, losing information about genuine ambiguity in subjective judgments. This dissertation presents a multimodal architecture for sexism detection that trains directly on annotator disagreement instead of discarding it. The system combines text and image encoders with annotator demographic information, and, for video content, adds audio and physiological signals (eye-tracking and heart rate) through a shared fusion layer. Separate output heads jointly predict binary detection, source intention, and fine-grained category labels as probability distributions. An annotator reliability layer estimates how consistent each annotator is during training and generalizes this to new annotators using demographic information, avoiding the need for fixed annotator identities. This two-stage design turns local, modality-specific signals into a single, well-calibrated prediction. Experimental validation on memes and videos shows that combining text, image, demographic, and biometric signals under this soft-label approach produces more robust and better-calibrated predictions than methods using a single modality or majority-vote labels, while remaining lightweight enough to train without large-scale computational resources.
+
+\mbox{}\linebreak
+\noindent {\bf Keywords:} Sexism detection, Multimodal learning, Learning with disagreement, Soft labels, Annotator reliability, Memes, TikTok videos, Biometric signals, Annotator demographics.
+
+%\vfill
+%\pagebreak
+%\mbox{}
+%\vfill
+%%\pagebreak

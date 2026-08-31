@@ -1,0 +1,12 @@
+%\thispagestyle{empty}
+A detecção automática de sexismo em conteúdo multimodal é limitada por métodos que usam apenas uma modalidade ou que reduzem o desacordo entre anotadores a um único rótulo majoritário, perdendo informação sobre a ambiguidade real de julgamentos subjetivos. Esta dissertação apresenta uma arquitetura multimodal para detecção de sexismo que treina diretamente sobre o desacordo entre anotadores, em vez de descartá-lo. O sistema combina codificadores de texto e imagem com informações demográficas dos anotadores e, para vídeos, adiciona sinais de áudio e fisiológicos (rastreamento ocular e frequência cardíaca) por meio de uma camada de fusão compartilhada. Cabeças de saída separadas preveem, em conjunto, a detecção binária, a intenção da fonte e as categorias finas como distribuições de probabilidade. Uma camada de confiabilidade dos anotadores estima o quão consistente cada anotador é durante o treino e generaliza essa estimativa para novos anotadores usando dados demográficos, evitando a dependência de identidades fixas de anotadores. Esse desenho em duas etapas transforma sinais locais, específicos de cada modalidade, em uma predição única e bem calibrada. A validação experimental em memes e vídeos mostra que combinar sinais de texto, imagem, demografia e biometria sob essa abordagem de rótulos soft produz predições mais robustas e melhor calibradas do que métodos com uma única modalidade ou rótulos de voto majoritário, permanecendo leve o suficiente para treinar sem grandes recursos computacionais.
+
+\mbox{}\linebreak
+\noindent {\bf Palavras-chave:} Detecção de sexismo, Aprendizado multimodal, Aprendizado com divergência, Soft labels, Confiabilidade de anotadores, Memes, Vídeos do TikTok, Sinais biométricos, Dados demográficos dos anotadores.
+
+
+%\vfill
+%\pagebreak
+%\mbox{}
+%\vfill
+%\pagebreak
