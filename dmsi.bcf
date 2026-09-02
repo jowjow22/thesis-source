@@ -2395,6 +2395,28 @@
     <bcf:citekey order="17" intorder="1">aiwizards2026</bcf:citekey>
     <bcf:citekey order="18" intorder="1">tong2022videomae</bcf:citekey>
     <bcf:citekey order="19" intorder="1">radford2023whisper</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">davani2022dealing</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">uma2021learning</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">plank2022problem</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">leonardelli2023lewidi</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">leonardelli2025lewidi</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">exist2026overview</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">dawid1979maximum</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">hovy2013mace</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">paun2018comparing</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">davani2022dealing</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">gordon2022jury</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">xu2025demmoe</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">ignatev2025hypernetworks</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">ivey2025nutmeg</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">vandermeer2024annotator</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">kiela2020hateful</bcf:citekey>
+    <bcf:citekey order="35" intorder="2">kumar2022hateclipper</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">uma2021learning</bcf:citekey>
+    <bcf:citekey order="36" intorder="2">leonardelli2023lewidi</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">xu2025demmoe</bcf:citekey>
+    <bcf:citekey order="37" intorder="2">ignatev2025hypernetworks</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">exist2026overview</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

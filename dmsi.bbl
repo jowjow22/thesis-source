@@ -755,6 +755,423 @@
       \field{pages}{28492\bibrangedash 28518}
       \range{pages}{27}
     \endentry
+    \entry{leonardelli2023lewidi}{inproceedings}{}{}
+      \name{author}{9}{}{%
+        {{hash=fe18513f7b0eece07ffeaa309069750f}{%
+           family={Leonardelli},
+           familyi={L\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=00477b07f327beed34ca2daf24ac2acb}{%
+           family={Abercrombie},
+           familyi={A\bibinitperiod},
+           given={Gavin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a6316189a989a50f4bc7f72c6165f342}{%
+           family={Almanea},
+           familyi={A\bibinitperiod},
+           given={Dina},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1ed7a3568fca65839ab7d3e2f0b1b9d0}{%
+           family={Basile},
+           familyi={B\bibinitperiod},
+           given={Valerio},
+           giveni={V\bibinitperiod}}}%
+        {{hash=86103e791384e7b137c3355f37817dc9}{%
+           family={Fornaciari},
+           familyi={F\bibinitperiod},
+           given={Tommaso},
+           giveni={T\bibinitperiod}}}%
+        {{hash=63bd895d4fbba2d503bc308d763e44d4}{%
+           family={Plank},
+           familyi={P\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod}}}%
+        {{hash=364eb08d5e0edc75ee2c982f8fb9e013}{%
+           family={Rieser},
+           familyi={R\bibinitperiod},
+           given={Verena},
+           giveni={V\bibinitperiod}}}%
+        {{hash=06c58f8b3775f4b821291152cf90baf4}{%
+           family={Uma},
+           familyi={U\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a18d390058dfaa1a918b1cb85cde6539}{%
+           family={Poesio},
+           familyi={P\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Toronto, Canada}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{ed5c17b37f2e0f840d025a3617ba7845}
+      \strng{fullhash}{8d38afbb9e7b7b043183a71d3c6915db}
+      \strng{fullhashraw}{8d38afbb9e7b7b043183a71d3c6915db}
+      \strng{bibnamehash}{ed5c17b37f2e0f840d025a3617ba7845}
+      \strng{authorbibnamehash}{ed5c17b37f2e0f840d025a3617ba7845}
+      \strng{authornamehash}{ed5c17b37f2e0f840d025a3617ba7845}
+      \strng{authorfullhash}{8d38afbb9e7b7b043183a71d3c6915db}
+      \strng{authorfullhashraw}{8d38afbb9e7b7b043183a71d3c6915db}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 17th International Workshop on Semantic Evaluation (SemEval-2023)}
+      \field{month}{7}
+      \field{title}{{SemEval-2023} Task 11: Learning with Disagreements ({LeWiDi})}
+      \field{year}{2023}
+      \field{pages}{2304\bibrangedash 2318}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.18653/v1/2023.semeval-1.314
+      \endverb
+    \endentry
+    \entry{leonardelli2025lewidi}{article}{}{}
+      \name{author}{11}{}{%
+        {{hash=fe18513f7b0eece07ffeaa309069750f}{%
+           family={Leonardelli},
+           familyi={L\bibinitperiod},
+           given={Elisa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=4f99196adc6072ef560961e0dcfa30cf}{%
+           family={Casola},
+           familyi={C\bibinitperiod},
+           given={Silvia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=032f9725f6b4640589fb18826de213c3}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Siyao},
+           giveni={S\bibinitperiod}}}%
+        {{hash=75e6983bfb91a3244841dda49a8ecfa4}{%
+           family={Rizzi},
+           familyi={R\bibinitperiod},
+           given={Giulia},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1ed7a3568fca65839ab7d3e2f0b1b9d0}{%
+           family={Basile},
+           familyi={B\bibinitperiod},
+           given={Valerio},
+           giveni={V\bibinitperiod}}}%
+        {{hash=86003bfe11429923baf8e86830515e72}{%
+           family={Fersini},
+           familyi={F\bibinitperiod},
+           given={Elisabetta},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e111bdf27b52dec5f6f66726d6962539}{%
+           family={Frassinelli},
+           familyi={F\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6f04503510305c32cd735c5ad1e694dd}{%
+           family={Jang},
+           familyi={J\bibinitperiod},
+           given={Hyewon},
+           giveni={H\bibinitperiod}}}%
+        {{hash=40001ab7dc73279e272ab9bc468e5de9}{%
+           family={Pavlovic},
+           familyi={P\bibinitperiod},
+           given={Maja},
+           giveni={M\bibinitperiod}}}%
+        {{hash=63bd895d4fbba2d503bc308d763e44d4}{%
+           family={Plank},
+           familyi={P\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a18d390058dfaa1a918b1cb85cde6539}{%
+           family={Poesio},
+           familyi={P\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed5c17b37f2e0f840d025a3617ba7845}
+      \strng{fullhash}{d8d17683b0e53d2739839c382b6058ee}
+      \strng{fullhashraw}{d8d17683b0e53d2739839c382b6058ee}
+      \strng{bibnamehash}{ed5c17b37f2e0f840d025a3617ba7845}
+      \strng{authorbibnamehash}{ed5c17b37f2e0f840d025a3617ba7845}
+      \strng{authornamehash}{ed5c17b37f2e0f840d025a3617ba7845}
+      \strng{authorfullhash}{d8d17683b0e53d2739839c382b6058ee}
+      \strng{authorfullhashraw}{d8d17683b0e53d2739839c382b6058ee}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2510.08460}
+      \field{title}{{LeWiDi-2025} at {NLPerspectives}: Third Edition of the Learning with Disagreements Shared Task}
+      \field{year}{2025}
+    \endentry
+    \entry{paun2018comparing}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=c6495f1e5dc21c47e0c3e51375743b61}{%
+           family={Paun},
+           familyi={P\bibinitperiod},
+           given={Silviu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5321a7ac2b0407bc405fa8816fd73f09}{%
+           family={Carpenter},
+           familyi={C\bibinitperiod},
+           given={Bob},
+           giveni={B\bibinitperiod}}}%
+        {{hash=99f6ca53d9fd0905d9f47347273a0e46}{%
+           family={Chamberlain},
+           familyi={C\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+        {{hash=460909209014ce11714ba7d75523ebc8}{%
+           family={Hovy},
+           familyi={H\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d7fb753c650e0e504e0e9d799dc5e663}{%
+           family={Kruschwitz},
+           familyi={K\bibinitperiod},
+           given={Udo},
+           giveni={U\bibinitperiod}}}%
+        {{hash=a18d390058dfaa1a918b1cb85cde6539}{%
+           family={Poesio},
+           familyi={P\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{44f7fa907958f9735b9d8f366df0e8a4}
+      \strng{fullhash}{7a46fc302d68f0451af5e5172b51bc27}
+      \strng{fullhashraw}{7a46fc302d68f0451af5e5172b51bc27}
+      \strng{bibnamehash}{7a46fc302d68f0451af5e5172b51bc27}
+      \strng{authorbibnamehash}{7a46fc302d68f0451af5e5172b51bc27}
+      \strng{authornamehash}{44f7fa907958f9735b9d8f366df0e8a4}
+      \strng{authorfullhash}{7a46fc302d68f0451af5e5172b51bc27}
+      \strng{authorfullhashraw}{7a46fc302d68f0451af5e5172b51bc27}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Transactions of the Association for Computational Linguistics}
+      \field{title}{Comparing {B}ayesian Models of Annotation}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{pages}{571\bibrangedash 585}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1162/tacl_a_00040
+      \endverb
+    \endentry
+    \entry{gordon2022jury}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=ff7185f5c18d899c67125204b54257e9}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={Mitchell\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=0d8a2050f1655d312046aa88aecba05b}{%
+           family={Lam},
+           familyi={L\bibinitperiod},
+           given={Michelle\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=a6d2d4802375c9b3367011ada5e50822}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Joon\bibnamedelima Sung},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b872627d1d0b2e268d84ce736fade40a}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Kayur},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8688ea21dd6bdb9d4c896b4aca0b199e}{%
+           family={Hancock},
+           familyi={H\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=be228979341f812e59d6e0fe757fe105}{%
+           family={Hashimoto},
+           familyi={H\bibinitperiod},
+           given={Tatsunori},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bb1df70dce464605ddd9cf83485d8db1}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Michael\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New Orleans, LA, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{11e97e7e57e6f46e4e59e24c02061a6d}
+      \strng{fullhash}{cf5dbe53b2b0356ab142d587468a4b73}
+      \strng{fullhashraw}{cf5dbe53b2b0356ab142d587468a4b73}
+      \strng{bibnamehash}{11e97e7e57e6f46e4e59e24c02061a6d}
+      \strng{authorbibnamehash}{11e97e7e57e6f46e4e59e24c02061a6d}
+      \strng{authornamehash}{11e97e7e57e6f46e4e59e24c02061a6d}
+      \strng{authorfullhash}{cf5dbe53b2b0356ab142d587468a4b73}
+      \strng{authorfullhashraw}{cf5dbe53b2b0356ab142d587468a4b73}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{CHI Conference on Human Factors in Computing Systems (CHI '22)}
+      \field{month}{4}
+      \field{title}{Jury Learning: Integrating Dissenting Voices into Machine Learning Models}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1145/3491102.3502004
+      \endverb
+    \endentry
+    \entry{xu2025demmoe}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=1dcc081d31870063f45b9981bedc297a}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yinuo},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d3b39b05f43f74ead679784f4eebb7e2}{%
+           family={Derricks},
+           familyi={D\bibinitperiod},
+           given={Veronica},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a15a24f4c2613f14072e32daaeb2d4c8}{%
+           family={Earl},
+           familyi={E\bibinitperiod},
+           given={Allison},
+           giveni={A\bibinitperiod}}}%
+        {{hash=453dbaae6267b6b55c5b9531d3eed911}{%
+           family={Jurgens},
+           familyi={J\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Diego, California, United States}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{3f90a763a0394e4abd636b6b6a63bcdb}
+      \strng{fullhash}{08f7adc74681a57bd949a7cfae00d332}
+      \strng{fullhashraw}{08f7adc74681a57bd949a7cfae00d332}
+      \strng{bibnamehash}{08f7adc74681a57bd949a7cfae00d332}
+      \strng{authorbibnamehash}{08f7adc74681a57bd949a7cfae00d332}
+      \strng{authornamehash}{3f90a763a0394e4abd636b6b6a63bcdb}
+      \strng{authorfullhash}{08f7adc74681a57bd949a7cfae00d332}
+      \strng{authorfullhashraw}{08f7adc74681a57bd949a7cfae00d332}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}
+      \field{month}{7}
+      \field{title}{Modeling Annotator Disagreement with Demographic-Aware Experts and Synthetic Perspectives}
+      \field{year}{2026}
+      \field{pages}{41260\bibrangedash 41294}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.18653/v1/2026.acl-long.1914
+      \endverb
+    \endentry
+    \entry{ignatev2025hypernetworks}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=ef086cf5f4567611e62975aed0fac8ed}{%
+           family={Ignatev},
+           familyi={I\bibinitperiod},
+           given={Daniil},
+           giveni={D\bibinitperiod}}}%
+        {{hash=113b049ed98555fbf26cca67e35099db}{%
+           family={Paperno},
+           familyi={P\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a18d390058dfaa1a918b1cb85cde6539}{%
+           family={Poesio},
+           familyi={P\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Suzhou, China}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{1e9cf177b6862dc24397152f9282d4ee}
+      \strng{fullhash}{cfd5e291017d88026502fdf9c52b4b4f}
+      \strng{fullhashraw}{cfd5e291017d88026502fdf9c52b4b4f}
+      \strng{bibnamehash}{cfd5e291017d88026502fdf9c52b4b4f}
+      \strng{authorbibnamehash}{cfd5e291017d88026502fdf9c52b4b4f}
+      \strng{authornamehash}{1e9cf177b6862dc24397152f9282d4ee}
+      \strng{authorfullhash}{cfd5e291017d88026502fdf9c52b4b4f}
+      \strng{authorfullhashraw}{cfd5e291017d88026502fdf9c52b4b4f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 4th Workshop on Perspectivist Approaches to NLP}
+      \field{month}{11}
+      \field{title}{Hypernetworks for Perspectivist Adaptation}
+      \field{year}{2025}
+      \field{pages}{111\bibrangedash 122}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.18653/v1/2025.nlperspectives-1.10
+      \endverb
+    \endentry
+    \entry{vandermeer2024annotator}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=0388df548b45b0e11c15abfc21da3bd0}{%
+           family={Meer},
+           familyi={M\bibinitperiod},
+           given={Michiel},
+           giveni={M\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=51e3f38cc63ab8ebdca85441e6cdee80}{%
+           family={Falk},
+           familyi={F\bibinitperiod},
+           given={Neele},
+           giveni={N\bibinitperiod}}}%
+        {{hash=427816e23e99534ac877ea2a297d6a2c}{%
+           family={Murukannaiah},
+           familyi={M\bibinitperiod},
+           given={Pradeep\bibnamedelima K.},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=3e4fa7354b722ecc6e805e7b6d2982a3}{%
+           family={Liscio},
+           familyi={L\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Miami, Florida, USA}%
+      }
+      \strng{namehash}{d21f806d3b8ac66991f30c7db7a85b0c}
+      \strng{fullhash}{a9b844ba15f4d2bb42c4c4e3c208f619}
+      \strng{fullhashraw}{a9b844ba15f4d2bb42c4c4e3c208f619}
+      \strng{bibnamehash}{a9b844ba15f4d2bb42c4c4e3c208f619}
+      \strng{authorbibnamehash}{a9b844ba15f4d2bb42c4c4e3c208f619}
+      \strng{authornamehash}{d21f806d3b8ac66991f30c7db7a85b0c}
+      \strng{authorfullhash}{a9b844ba15f4d2bb42c4c4e3c208f619}
+      \strng{authorfullhashraw}{a9b844ba15f4d2bb42c4c4e3c208f619}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)}
+      \field{title}{Annotator-Centric Active Learning for Subjective {NLP} Tasks}
+      \field{year}{2024}
+      \field{pages}{18537\bibrangedash 18555}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.18653/v1/2024.emnlp-main.1031
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

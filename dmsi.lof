@@ -1,6 +1,8 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Conceptual comparison between hard-label and soft-label training. Five annotators cast individual judgments on the same content; the hard-label approach collapses this into a single majority-vote label and discards the minority votes, while the soft-label approach preserves the full distribution of annotator judgments.}}{14}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Research landscape for sexism detection approaches.}}{19}{figure.caption.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

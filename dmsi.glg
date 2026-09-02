@@ -1,0 +1,7 @@
+This is makeindex, version 2.18 [TeX Live 2026] (kpathsea + Thai support).
+Scanning style file ./dmsi.ist...........................done (27 attributes redefined, 0 ignored).
+Scanning input file dmsi.glo....done (20 entries accepted, 0 rejected).
+Sorting entries....done (77 comparisons).
+Generating output file dmsi.gls....done (55 lines written, 0 warnings).
+Output written in dmsi.gls.
+Transcript written in dmsi.glg.

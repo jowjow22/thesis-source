@@ -1,12 +1,18 @@
 # Fdb version 4
-["biber dmsi"] 1788157980.73591 "dmsi.bcf" "dmsi.bbl" "dmsi" 1788158003.86198 0
-  "dmsi.bcf" 1788158003.78518 109303 51c986da89688169b72d3b7cf2f9e3bd "pdflatex"
+["biber dmsi"] 1788298307.93938 "dmsi.bcf" "dmsi.bbl" "dmsi" 1788304544.8304 0
+  "dmsi.bcf" 1788304544.74776 110916 e9c719c20a58824dcfd8922b7a73a66b "pdflatex"
   "lib/refs.bib" 1787248339.83837 12713 fcc5dbfc0ef4ef6264190a4e44d98c22 ""
   (generated)
   "dmsi.bbl"
   "dmsi.blg"
   (rewritten before read)
-["pdflatex"] 1788158002.35093 "dmsi.tex" "dmsi.pdf" "dmsi" 1788158003.86224 0
+["cusdep glo gls dmsi"] 1788162209.0462 "dmsi.glo" "dmsi.gls" "dmsi" 1788304544.83019 0
+  "dmsi.glo" 1788304544.74842 1682 165a9d8db4f7d5be5bec259f5d0118dc "pdflatex"
+  (generated)
+  "dmsi.gls"
+  (rewritten before read)
+["pdflatex"] 1788304542.66965 "/Users/jonathansantosdasilva/Documents/projects/Tese_arquivo_final_2_0_agora_vai_true/dmsi.tex" "dmsi.pdf" "dmsi" 1788304544.83065 0
+  "/Users/jonathansantosdasilva/Documents/projects/Tese_arquivo_final_2_0_agora_vai_true/dmsi.tex" 1788162001.37466 2938 35ffeac36b9da3dafa505e213619ff1e ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc" 1254269338 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -222,12 +228,12 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1779974608 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1774209607 3636776 dc5fa9b6b1453b9d196cd42edf876004 ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "acronym.tex" 1786646662 428 4643af6fd1c844142fac53c2b4a86bc2 ""
+  "acronym.tex" 1788162206.97919 1091 04ac06a22b708f96ec1deb5c05b2121f ""
   "chapters/abstract.tex" 1786646664 1683 1dcbd5981bfa97f830fe760d3b1c392e ""
   "chapters/acknowledgment.tex" 1786646664 34 c735fc4ff613a7c2cd3ed95b813bca73 ""
   "chapters/apendice01.tex" 1786747095.16325 115 5a78b0d66457b96726ae908177831777 ""
   "chapters/cap01.tex" 1788114183.32444 13708 081d3c57ac573485a8dce02f4ba21437 ""
-  "chapters/cap02.tex" 1788114648.0927 9198 7b0e61bfa45aaba3f6276adef3e84cdc ""
+  "chapters/cap02.tex" 1788304540.237 22309 ceab797af80ea4074ec8f6c32fe40b44 ""
   "chapters/cap03.tex" 1786747074.75673 582 ecda5fc1cf308ebd170c06d7f9c3299b ""
   "chapters/cap04.tex" 1786747077.71631 502 b1a44c56412d5eb61779ad59a81b36da ""
   "chapters/cap05.tex" 1786747080.53946 470 810e3e8f6f1ea5221bf3763daa397386 ""
@@ -236,16 +242,18 @@
   "chapters/cap08.tex" 1786747092.39773 331 f78f1216256043db1e687553f3dd173d ""
   "chapters/dedication.tex" 1786792535.6415 411 1127ec476b1b0dd47e43caaeef2b18c0 ""
   "chapters/resumo.tex" 1786646664 1901 c60acbaacffbf4f36bda5839c48df0f7 ""
-  "dmsi.aux" 1788158003.78052 15564 a5cf4674bb0bcf7e44e70a440e94db18 "pdflatex"
-  "dmsi.bbl" 1788157999.29375 31916 7f4915d09d731833b36d68f53bda27c2 "biber dmsi"
-  "dmsi.gls" 0 -1 0 ""
-  "dmsi.lof" 1788158003.78587 210 1361e9fce9ee1b010a0f192120189c6b "pdflatex"
-  "dmsi.out" 1788158003.78288 10503 16673ab02f4d3dd7df059c39c9a81b93 "pdflatex"
-  "dmsi.run.xml" 1788158003.78575 2400 fdd6afa68dff265fe7e959be39f6178b "pdflatex"
-  "dmsi.tex" 1786747102.82747 2938 4c76de49836bdd284cf47e148912d5e4 ""
-  "dmsi.toc" 1788158003.78584 4577 e05961d404cc87cd62d5f0fc93055b27 "pdflatex"
+  "dmsi.aux" 1788304544.74021 19001 9d50ce590759208c12aa04dddcab4e4f "pdflatex"
+  "dmsi.bbl" 1788298310.25874 48707 ac2fb9ab38a00b400e4de6d301cd8c91 "biber dmsi"
+  "dmsi.gls" 1788162209.12529 2807 f1207f38bb2a38ec22b101f99183285d "cusdep glo gls dmsi"
+  "dmsi.lof" 1788304544.7485 744 0cd22877cc6aa5f0fab2e3a420b08e91 "pdflatex"
+  "dmsi.out" 1788304544.74506 10503 16673ab02f4d3dd7df059c39c9a81b93 "pdflatex"
+  "dmsi.run.xml" 1788304544.74834 2400 fdd6afa68dff265fe7e959be39f6178b "pdflatex"
+  "dmsi.tex" 1788162001.37466 2938 35ffeac36b9da3dafa505e213619ff1e ""
+  "dmsi.toc" 1788304544.74844 4577 d3ae066991aa0df8370a2a8c5a05293b "pdflatex"
   "etc/logo_dd.png" 1786646664 8957 c0d04242b8abfbde31634bdddc457545 ""
   "etc/logo_ipb.png" 1786646664 11152 46a3bab95558a89cced5d197c23690a5 ""
+  "images/landscape.png" 1788304366.51953 124164 d6839b5b7a10eac8949d81d25e2f3936 ""
+  "images/soft_labels.png" 1788161439.66666 252083 79e15f5eca4f09f7ce70b88b57e0cb05 ""
   "ipb.cls" 1786646664 5707 5a94028b6d3b12d259d1189944cc2326 ""
   (generated)
   "dmsi.aux"

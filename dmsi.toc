@@ -8,45 +8,45 @@
 \contentsline {section}{\numberline {2.1}Sexism and Hate Speech Detection}{9}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Multimodal Learning for Memes and Video}{11}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Learning with Disagreement and Soft-Label Training}{13}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Annotator Modeling and Reliability Estimation}{13}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Towards Demographic-Aware, Disagreement-Preserving Systems}{13}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Task and Dataset Description}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Problem Formulation (Binary, Intention, Category Subtasks)}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Meme Dataset}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Video Dataset}{15}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Annotator Demographic Metadata}{15}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Physiological Data Sub-Corpus}{15}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Evaluation Metrics (ICM-Norm, Soft vs. Hard)}{15}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Final Considerations}{15}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Meme System Architecture (Task 2)}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Overview of the Architecture}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Text and Visual Encoders}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Fusion Strategy}{17}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Annotator Demographic Injection}{17}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Training Objectives and Optimization}{17}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Per-Class Threshold Tuning}{17}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Video System Architecture (Task 3)}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Overview of the Architecture}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Video, Audio, and Text Encoders}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Biometric Feature Integration}{19}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Multimodal Fusion and Modality Dropout}{19}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Training Objectives and Optimization}{19}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Annotator Reliability Modeling}{21}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Motivation: Noise vs. Genuine Disagreement}{21}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Reliability Estimation During Training}{21}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Demographic-Conditioned Generalization to Unseen Annotators}{21}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Integration with the Multimodal Pipeline}{21}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Experimental Setup and Results}{23}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Experimental Setup (Environment, Seeds, Ablation Design)}{23}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Meme System Results}{23}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Video System Results}{23}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Ablation Study}{23}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Annotator Reliability Study Results}{23}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Results Discussion}{23}{section.7.6}%
-\contentsline {chapter}{\numberline {8}Conclusions}{25}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Summary of Contributions}{25}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Limitations of the Study}{25}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Directions for Future Work}{25}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Final Considerations}{25}{section.8.4}%
+\contentsline {section}{\numberline {2.4}Annotator Modeling and Reliability Estimation}{15}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Towards Demographic-Aware, Disagreement-Preserving Systems}{17}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Task and Dataset Description}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Problem Formulation (Binary, Intention, Category Subtasks)}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Meme Dataset}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Video Dataset}{21}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Annotator Demographic Metadata}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Physiological Data Sub-Corpus}{21}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Evaluation Metrics (ICM-Norm, Soft vs. Hard)}{21}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Final Considerations}{21}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Meme System Architecture (Task 2)}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview of the Architecture}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Text and Visual Encoders}{23}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Fusion Strategy}{23}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Annotator Demographic Injection}{23}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Training Objectives and Optimization}{23}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Per-Class Threshold Tuning}{23}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Video System Architecture (Task 3)}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Overview of the Architecture}{25}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Video, Audio, and Text Encoders}{25}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Biometric Feature Integration}{25}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Multimodal Fusion and Modality Dropout}{25}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Training Objectives and Optimization}{25}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Annotator Reliability Modeling}{27}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Motivation: Noise vs. Genuine Disagreement}{27}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Reliability Estimation During Training}{27}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Demographic-Conditioned Generalization to Unseen Annotators}{27}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Integration with the Multimodal Pipeline}{27}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Experimental Setup and Results}{29}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Experimental Setup (Environment, Seeds, Ablation Design)}{29}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Meme System Results}{29}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Video System Results}{29}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Ablation Study}{29}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Annotator Reliability Study Results}{29}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Results Discussion}{29}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Conclusions}{31}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Summary of Contributions}{31}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Limitations of the Study}{31}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Directions for Future Work}{31}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Final Considerations}{31}{section.8.4}%
 \contentsline {chapter}{\numberline {A}Appendix}{A1}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Implementation Availability}{A1}{section.A.1}%

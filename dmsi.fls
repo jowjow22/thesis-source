@@ -2,7 +2,7 @@ PWD /Users/jonathansantosdasilva/Documents/projects/Tese_arquivo_final_2_0_agora
 INPUT /usr/local/texlive/2026/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT dmsi.tex
+INPUT /Users/jonathansantosdasilva/Documents/projects/Tese_arquivo_final_2_0_agora_vai_true/dmsi.tex
 OUTPUT dmsi.log
 INPUT ./ipb.cls
 INPUT ipb.cls
@@ -462,6 +462,9 @@ INPUT ./dmsi.lof
 INPUT ./dmsi.lof
 INPUT dmsi.lof
 OUTPUT dmsi.lof
+INPUT ./dmsi.gls
+INPUT ./dmsi.gls
+INPUT dmsi.gls
 INPUT ./chapters/cap01.tex
 INPUT ./chapters/cap01.tex
 INPUT ./chapters/cap01.tex
@@ -477,6 +480,16 @@ INPUT ./chapters/cap02.tex
 INPUT ./chapters/cap02.tex
 INPUT ./chapters/cap02.tex
 INPUT chapters/cap02.tex
+INPUT ./images/soft_labels.png
+INPUT ./images/soft_labels.png
+INPUT ./images/soft_labels.png
+INPUT ./images/soft_labels.png
+INPUT ./images/soft_labels.png
+INPUT ./images/landscape.png
+INPUT ./images/landscape.png
+INPUT ./images/landscape.png
+INPUT ./images/landscape.png
+INPUT ./images/landscape.png
 INPUT ./chapters/cap03.tex
 INPUT ./chapters/cap03.tex
 INPUT ./chapters/cap03.tex

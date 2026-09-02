@@ -1,0 +1,55 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossentry{AI}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossentry{CLEF}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}%
+\glossentry{CLIP}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{E}\relax \glsresetentrylist %
+\glossentry{EEG}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}%
+\glossentry{EM}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}%
+\glossentry{ESTiG}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}%
+\glossentry{EXIST}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{G}\relax \glsresetentrylist %
+\glossentry{GPU}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossentry{ICM}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}%
+\glossentry{IPB}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{L}\relax \glsresetentrylist %
+\glossentry{LeWiDi}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}%
+\glossentry{LoRA}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossentry{MACE}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}%
+\glossentry{ML}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}%
+\glossentry{MoE}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{N}\relax \glsresetentrylist %
+\glossentry{NLP}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{PEFT}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{SWA}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{U}\relax \glsresetentrylist %
+\glossentry{UTFPR}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}\glsgroupskip
+\glsgroupheading{X}\relax \glsresetentrylist %
+\glossentry{XLM}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{xii}}}%
+\end{theglossary}\glossarypostamble
